@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#markdown-input {
+  width: 100%;
+  height: 100px;
+}
+
+#html-output,
+#preview {
+  height: auto;
+  min-height: 100px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background-color: #f9f9f9;
+}
+
+@media (min-width: 600px) {
+
+  #markdown-input {
+    height: 200px;
+    margin: 0;
+  }
+
+  #container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+
+  #container>.container {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
